@@ -17,7 +17,7 @@ const allTabs = [
 
 export const tabs = createReducer({ index: 0, key: 'home', routes: allTabs }, {
   [types.SET_TAB](state, action) {
-    return Object.assign({}, state,  allTabs[action.index]());
+    return Object.assign({}, state,  {key: action.key});
   }
 });
 

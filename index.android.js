@@ -1,6 +1,6 @@
 import React from 'react'
 import { AppRegistry } from 'react-native'
-import AppContainer from './app/containers/AppContainer'
+import NavTabs from './app/containers/NavTabs'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware, combineReducers, compose} from 'redux'
 import thunkMiddleware from 'redux-thunk'
@@ -24,7 +24,7 @@ const store = configureStore({});
 
 const App = () => (
   <Provider store={store}>
-    <AppContainer />
+    <NavTabs />
   </Provider>
 )
 
